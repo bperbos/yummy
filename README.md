@@ -1,7 +1,7 @@
 
 # > https://pennylane-yummy.fly.dev
 
-⚠️ search / app overall is much faster on a local machine, those free fly.io web & postgres machines with 256mb of ram hurts
+⚠️ search / app overall perf is incomparable on a local machine, the free fly.io plan with its 256mb of ram for web & postgres hurts
 
 <img width="1717" alt="Capture d’écran 2023-09-02 à 18 09 16" src="https://github.com/bperbos/yummy/assets/40390077/180989d3-4ff0-431f-b9a6-a7bd9c710eb3">
 
@@ -13,6 +13,15 @@ Using [rbenv](https://github.com/rbenv/rbenv), [nvm](https://github.com/nvm-sh/n
 There are only two integration tests so far - don't shoot, I can explain 😶
 
 The db schema is as simple as a single table representing the json content from allrecipes, the search work is done by the full text search capabilities of postgres merging multiple fields.
+
+```
+rbenv install
+nvm install
+npm i -g yarn
+docker-compose up
+bin/rails db:prepare
+bin/dev
+```
 
 # User Stories
 
