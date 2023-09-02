@@ -1,6 +1,7 @@
-# README
+<img width="1717" alt="Capture d’écran 2023-09-02 à 18 09 16" src="https://github.com/bperbos/yummy/assets/40390077/180989d3-4ff0-431f-b9a6-a7bd9c710eb3">
 
-Using rbenv, nvm, esbuild, typescript, dockerized postgres.
+# README
+Using [rbenv](https://github.com/rbenv/rbenv), [nvm](https://github.com/nvm-sh/nvm), [esbuild](https://esbuild.github.io/), docker, typescript, postgres.
 
 `rails db:seed` reads the content of recipes-en.json and dumps it into the db.
 
