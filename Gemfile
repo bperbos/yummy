@@ -82,3 +82,9 @@ group :test do
   gem 'minitest-spec-rails'
   gem 'mocha'
 end
+
+gem "dockerfile-rails", ">= 1.5", :group => :development
+
+gem "sentry-ruby", "~> 5.10"
+
+gem "sentry-rails", "~> 5.10"

@@ -83,6 +83,5 @@ test:
 #
 production:
   <<: *default
-  database: yummy_production
-  username: yummy
-  password: <%= ENV["YUMMY_DATABASE_PASSWORD"] %>
+  host: <%= ENV["DATABASE_URL"] %>
+  database: pennylane_yummy

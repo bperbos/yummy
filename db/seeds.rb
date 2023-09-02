@@ -15,4 +15,7 @@ recipes =
         recipe_json.except(*EXCEPT).transform_keys { |key| MAPPING.fetch(key, key) }
     end
 
-Recipe.insert_all(recipes)
+# go easy on PG memory for the free plan of fly.io
+recipes.each_slice(100) do |sliced|
+    Recipe.insert_all(sliced)
+end
