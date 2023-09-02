@@ -3,6 +3,7 @@
   "private": "true",
   "scripts": {
     "build": "node build.mjs",
+    "build:dev": "node build_dev.mjs",
     "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify",
     "lint": "eslint --cache --max-warnings 0 app/javascript/react"
   },

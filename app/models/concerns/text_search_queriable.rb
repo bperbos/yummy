@@ -3,7 +3,7 @@
 # Although named in a generic manner, specific to recipes
 module TextSearchQueriable
   extend ActiveSupport::Concern
-    COLUMNS = %w(title category ingredients_string).map { |column| "coalesce(#{column}, '')" }
+    COLUMNS = %w(title ingredients_string category).map { |column| "coalesce(#{column}, '')" }
     WEIGHTS = %w(A B C)
 
     included do
