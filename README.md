@@ -1,3 +1,6 @@
+
+# > https://pennylane-yummy.fly.dev
+
 <img width="1717" alt="Capture d’écran 2023-09-02 à 18 09 16" src="https://github.com/bperbos/yummy/assets/40390077/180989d3-4ff0-431f-b9a6-a7bd9c710eb3">
 
 # README
@@ -5,7 +8,7 @@ Using [rbenv](https://github.com/rbenv/rbenv), [nvm](https://github.com/nvm-sh/n
 
 `rails db:seed` reads the content of recipes-en.json and dumps it into the db.
 
-There are only two integration tests so far.
+There are only two integration tests so far - don't shoot, I can explain 😶
 
 The db schema is as simple as a single table representing the json content from allrecipes, the search work is done by the full text search capabilities of postgres merging multiple fields.
 
