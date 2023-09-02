@@ -4,7 +4,7 @@ import Home from "./Home";
 
 window.addEventListener("load", () => {
   const root = createRoot(
-    document.getElementById('root')
+    document.getElementById('root') as HTMLElement
   );
   root.render(<Home />);
 });
