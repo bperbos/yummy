@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Using rbenv, nvm, esbuild, typescript, dockerized postgres.
 
-Things you may want to cover:
+`rails db:seed` reads the content of recipes-en.json and dumps it into the db.
 
-* Ruby version
+There are only two integration tests so far.
 
-* System dependencies
+The db schema is as simple as a single table representing the json content from allrecipes, the search work is done by the full text search capabilities of postgres merging multiple fields.
 
-* Configuration
+# User Stories
 
-* Database creation
+- As a user, I can browse paginated recipes stored in the database and preview their title, rating, category, ingredients, preping and cooking time
 
-* Database initialization
+- As a user, I can search recipes by their title, category and ingredients through a unique search bar and browse the results ranked by relevance (word match count)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- As a user, I can use the app on a desktop as well as a mobile screen
