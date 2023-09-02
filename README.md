@@ -1,8 +1,6 @@
 
 # > https://pennylane-yummy.fly.dev
 
-⚠️ Perf is quite poor - the free fly.io plan with its 256mb of ram for web & postgres hurts
-
 <img width="1717" alt="Capture d’écran 2023-09-02 à 18 09 16" src="https://github.com/bperbos/yummy/assets/40390077/180989d3-4ff0-431f-b9a6-a7bd9c710eb3">
 
 # README
