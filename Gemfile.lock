@@ -130,6 +130,11 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.5)
     minitest (5.19.0)
+    minitest-spec-rails (7.2.0)
+      minitest (>= 5.0)
+      railties (>= 4.1)
+    mocha (2.1.0)
+      ruby2_keywords (>= 0.0.5)
     msgpack (1.7.2)
     net-imap (0.3.7)
       date
@@ -185,6 +190,7 @@ GEM
     rake (13.0.6)
     regexp_parser (2.8.1)
     rexml (3.2.6)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.10.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -236,6 +242,8 @@ DEPENDENCIES
   jbuilder
   jsbundling-rails
   kaminari
+  minitest-spec-rails
+  mocha
   pg (~> 1.1)
   pry
   puma (~> 5.0)
